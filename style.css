@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "logotypejp_corpmin";
+    src: url(font/logotypejp_corpmin.ttf);
+}
+
+@font-face {
+    font-family: "Priyati-Regular";
+    src: url(font/Priyati-Regular.ttf);
+}
+
+@font-face {
+    font-family: "ipaexm";
+    src: url(font/ipaexm.ttf);
+}
+
+body {
+    width: 100%;
+    background: url(photo/background.jpg) center center;
+    background-size: 100% auto;
+}
+
+nav {
+    overflow: hidden;
+    background-color: rgba(198, 135, 128, 0.4);
+    height: 70px;
+    width: 100vw;
+}
+
+nav li {
+    list-style-type: none;
+    float: left;
+}
+
+.header-box {
+    height: 70px;
+    width: 66%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-button {
+    margin: auto;
+    padding: 5px;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "logotypejp_corpmin";
+    color: rgba(128, 74, 57, 1);
+    display: block;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+
+nav a:hover {
+    color: #3f5ddb;
+}
+
+.header-images {
+    width: 83%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.header-text {
+    width: 33.3%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.header-tea {
+    width: 60%;
+    margin: auto 0;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.coffee-or-tea {
+    background-color: #fff;
+
+}
+
+.coffee-or-tea-title-box {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.coffee-or-tea-title {
+    width: 100%;
+}
+
+.coffee-or-tea h1 {
+    font-family: "logotypejp_corpmin";
+    font-size: 100px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #c68780;
+}
+
+.coffee-or-tea h2 {
+    font-family: "ipaexm";
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}
+
+.coffee-or-tea p {
+    font-family: "ipaexm";
+    font-size: 20px;
+    color: #777;
+    text-align: center;
+    padding: 20px;
+    line-height: 40px;
+}
+
+.about-caffeine {
+    background-color: #fff;
+    height: 100vh;
+}
+
+.about-caffeine h2 {
+    font-family: "logotypejp_corpmin";
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    padding: 10px;
+    color: #804a39;
+}
+
+.about-caffeine p {
+    font-family: "ipaexm";
+    font-size: 20px;
+    color: #777;
+    text-align: left;
+    padding: 20px;
+    line-height: 40px;
+}
+
+.caffeine-img{
+    text-align: center;
+    padding: 20px;
+}
