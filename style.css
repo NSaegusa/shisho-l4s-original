@@ -29,6 +29,8 @@ nav {
     background-color: rgba(198, 135, 128, 0.4);
     height: 70px;
     width: 100vw;
+    z-index: 3;
+    position: fixed;
 }
 
 nav li {
@@ -64,83 +66,108 @@ nav a:hover {
     color: #3f5ddb;
 }
 
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
 .header-images {
     width: 83%;
-    height: 100vh;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
 }
 
 .header-text {
     width: 33.3%;
     object-fit: cover;
+    position: absolute;
     z-index: 2;
 }
 
 .header-tea {
-    width: 60%;
-    margin: auto 0;
+    width: 72%;
+    object-fit: cover;
+    position: relative;
+    padding-left: 25%;
 }
 
 .wrapper {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 
 .coffee-or-tea {
     background-color: #fff;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 123px;
+    margin-bottom: 123px;
 }
 
-.text-frame{
-    width: 66%;
-        margin: 0 auto;
+.text-frame {
+    width: 88%;
+    margin: 0 auto;
 }
 
 .coffee-or-tea-title-box {
     display: flex;
     height: 100vh;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
 }
 
 .coffee-or-tea-title {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .coffee-or-tea h1 {
     font-family: "logotypejp_corpmin";
-    font-size: 100px;
+    font-size: 107px;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     color: #c68780;
+    display: block;
 }
 
 .coffee-or-tea h2 {
     font-family: "ipaexm";
-    font-size: 30px;
+    font-size: 53px;
     text-align: center;
-    padding: 30px;
     color: #777;
+    display: block;
 }
 
 .coffee-or-tea p {
     font-family: "ipaexm";
-    font-size: 20px;
+    font-size: 27px;
     color: #777;
     text-align: center;
-    padding: 20px;
-    line-height: 40px;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    line-height: 50px;
+    display: block;
 }
 
-.contents{
+.yazirusi-img {
+    text-align: center;
+}
+
+.contents {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .about-caffeine {
     background-color: #fff;
+    padding-bottom: 53px;
+    padding-top: 10px;
 }
 
 .about-caffeine h2 {
@@ -161,34 +188,130 @@ nav a:hover {
     line-height: 40px;
 }
 
-.caffeine-img{
+.caffeine-img {
     text-align: center;
     padding: 20px;
-    width: 100%;
+    max-width: 100%;
 }
 
-.cafeeine-graph{
-    width:60%;
+.caffeine-graph {
+    max-width: 100%;
     height: auto;
-    object-fit: contain;
 }
 
-.oxidation-img{
+.oxidation-box {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.oxidation-img {
     text-align: center;
     padding: 20px;
-    width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
-.about-caffeine h3{
-     font-family: "logotypejp_corpmin";
+.about-caffeine h3 {
+    font-family: "logotypejp_corpmin";
     font-size: 30px;
     padding: 20px 20px 0px 20px;
     color: #804a39;
 }
 
-.type-contents{
+.type-contents {
     display: flex;
-    margin-top:50px;
-    margin-bottom: 50px
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
+.tea-explanation {
+    margin-top: 15px
+}
+
+.tea-explanation h3 {
+    padding: 10px 0px 10px 30px;
+}
+
+.tea-explanation p {
+    padding: 10px 0px 10px 30px;
+}
+
+
+.flavor-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0px 150px 0px;
+}
+
+.flavor-photo {
+    padding: 20px 10px;
+}
+
+.recommended-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+.recommended-text {
+    width: 50%;
+    height: auto;
+}
+
+.recommended-photo {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.recommended-text h3 {
+    font-family: "logotypejp_corpmin";
+    font-size: 30px;
+    padding: 5px 10px;
+    color: #804a39;
+    text-align: left;
+}
+
+.recommended-text h4 {
+    font-family: "ipaexm";
+    font-size: 20px;
+    color: #777;
+    text-align: left;
+    padding: 5px 10px;
+    line-height: 40px;
+}
+
+.recommended-text li {
+    font-family: "ipaexm";
+    font-size: 18px;
+    color: #777;
+    text-align: left;
+    padding: 5px 10px;
+    line-height: 30px;
+    max-width: 480px;
+}
+
+.recommended {
+    padding-bottom: 50px;
+}
+
+footer {
+    background: #c68780;
+    width: 100%;
+    height: 50px;
+}
+
+footer p {
+    font-family: "ipaexm";
+    font-size: 20px;
+    color: #777;
+    text-align: center;
+    padding: 15px;
+}
