@@ -63,7 +63,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #3f5ddb;
+    color: #fff;
 }
 
 header {
@@ -117,7 +117,7 @@ header {
 
 .coffee-or-tea-title-box {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: space-around;
 }
@@ -129,16 +129,16 @@ header {
 
 .coffee-or-tea h1 {
     font-family: "logotypejp_corpmin";
-    font-size: 107px;
+    font-size: 50px;
     text-align: center;
-    padding-bottom: 30px;
+    padding: 30px;
     color: #c68780;
     display: block;
 }
 
 .coffee-or-tea h2 {
     font-family: "ipaexm";
-    font-size: 53px;
+    font-size: 30px;
     text-align: center;
     color: #777;
     display: block;
@@ -146,12 +146,12 @@ header {
 
 .coffee-or-tea p {
     font-family: "ipaexm";
-    font-size: 27px;
+    font-size: 15px;
     color: #777;
     text-align: center;
     padding-bottom: 70px;
     padding-top: 70px;
-    line-height: 50px;
+    line-height: 40px;
     display: block;
 }
 
@@ -181,7 +181,7 @@ header {
 
 .about-caffeine p {
     font-family: "ipaexm";
-    font-size: 20px;
+    font-size: 15px;
     color: #777;
     text-align: left;
     padding: 20px;
@@ -228,8 +228,17 @@ header {
     margin-bottom: 60px;
 }
 
+
+
+.tea-img{
+    max-width: 190px;
+    height: auto;
+    text-align: center;
+     margin: 30px;
+}
+
 .tea-explanation {
-    margin-top: 15px
+    margin-top: 40px
 }
 
 .tea-explanation h3 {
@@ -248,10 +257,56 @@ header {
     padding: 50px 0px 150px 0px;
 }
 
-.flavor-photo {
-    padding: 20px 10px;
+.dissolve-animation {
+    padding: 20px 20px;
+    width: 190px;
+    height: 190px;
+    float: left;
+    position: relative;
 }
 
+.caption p{
+     font-family: "ipaexm";
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    padding: 45px 20px;
+    line-height: 30px;
+    opacity: 0;
+}
+
+.caption {
+    background: #fff;
+    width: 190px;
+    height: 190px;
+    padding: 10px 20px;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+}
+
+
+.caption p:hover{
+    font-family: "ipaexm";
+    font-size: 15px;
+    color: #000;
+    text-align: left;
+    padding:  45px 20px;
+    line-height: 30px;
+    opacity: 1;
+}
+
+.caption:hover {
+    background: #fff;
+    width: 190px;
+    height: 190px;
+    padding: 20px 10px;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0.6;
+}
 .recommended-box {
     display: flex;
     flex-wrap: wrap;

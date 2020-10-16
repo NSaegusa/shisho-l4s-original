@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Have a nice Tea</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -18,22 +20,22 @@
                 </div>
                 <div class="nav-button">
                     <li>
-                        <a href="">Coffee or Tea</a>
+                        <a href="#coffeeortea">Coffee or Tea</a>
                     </li>
                 </div>
                 <div class="nav-button">
                     <li>
-                        <a href="">Flavor</a>
+                        <a href="#how-about-tea">How about Tea</a>
                     </li>
                 </div>
                 <div class="nav-button">
                     <li>
-                        <a href="">How about Tea</a>
+                        <a href="#flavor">Flavor</a>
                     </li>
                 </div>
                 <div class="nav-button">
                     <li>
-                        <a href="">Recommended</a>
+                        <a href="#recommended">Recommended</a>
                     </li>
                 </div>
             </div>
@@ -47,36 +49,39 @@
 
     <body>
         <div class="wrapper">
-            <section class="coffee-or-tea">
-                <div class="text-frame">
-                    <div class="coffee-or-tea-title-box">
-                        <div class="coffee-or-tea-title">
-                            <h1>Coffee or Tea</h1>
-                            <h2>コーヒーと紅茶の比較</h2>
-                            <p>ほっと、一息。<br>そんな時、あなたは何を思い浮かべますか？<br>多くの人はコーヒーを思い浮かべるのでしょうか？<br>このサイトを見た後は、紅茶を選んでもらえるようになると幸いです。</p>
-                            <div class="yazirusi-img"><img src="photo/yazirusi.png" alt=""></div>
+            <div class="box box1">
+                <section class="coffee-or-tea" id="coffeeortea">
+                    <div class="text-frame">
+                        <div class="coffee-or-tea-title-box">
+                            <div class="coffee-or-tea-title">
+                                <h1>Coffee or Tea</h1>
+                                <h2>コーヒーと紅茶の比較</h2>
+                                <p>ほっと、一息。<br>そんな時、あなたは何を思い浮かべますか？<br>多くの人はコーヒーを思い浮かべるのでしょうか？<br>このサイトを見た後は、紅茶を選んでもらえるようになると幸いです。</p>
+                                <div class="yazirusi-img"><img src="photo/yazirusi.png" alt=""></div>
+                            </div>
+                        </div>
+
+                        <div class="contents">
+                            <div class="about-caffeine">
+                                <h2>about Caffeine</h2>
+                                <p>カフェインには、覚醒作用、興奮作用、利尿作用、血管を拡張する作用があります。どの効果にもメリットとデメリットがつきものです。たくさん飲みたい場合は紅茶を選ぶ、少ない量で効果を期待したい場合にはコーヒーを飲むなど飲み分けるといいでしょう。
+                                </p>
+                                <div class="caffeine-img"><img src="photo/caffeine-graph.png" alt="" class="caffeine-graph"></div>
+                            </div>
+
+                            <div class="about-caffeine">
+                                <h2>about Polyphenol</h2>
+                                <p>コーヒーポリフェノールはガンや動脈硬化を防止する、糖尿病を予防すると言った効果が期待されます。一方、紅茶ポリフェノールは血糖値上昇を抑える、血栓を予防する、コレステロールの排泄を促す効果があります。
+                                </p>
+                                <div class="caffeine-img"><img src="photo/polyphenol_graph.png" alt="" class="caffeine-graph"></div>
+                            </div>
                         </div>
                     </div>
+                </section>
+            </div>
 
-                    <div class="contents">
-                        <div class="about-caffeine">
-                            <h2>about Caffeine</h2>
-                            <p>カフェインには、覚醒作用、興奮作用、利尿作用、血管を拡張する作用があります。どの効果にもメリットとデメリットがつきものです。たくさん飲みたい場合は紅茶を選ぶ、少ない量で効果を期待したい場合にはコーヒーを飲むなど飲み分けるといいでしょう。
-                            </p>
-                            <div class="caffeine-img"><img src="photo/caffeine-graph.png" alt="" class="caffeine-graph"></div>
-                        </div>
 
-                        <div class="about-caffeine">
-                            <h2>about Polyphenol</h2>
-                            <p>コーヒーポリフェノールはガンや動脈硬化を防止する、糖尿病を予防すると言った効果が期待されます。一方、紅茶ポリフェノールは血糖値上昇を抑える、血栓を予防する、コレステロールの排泄を促す効果があります。
-                            </p>
-                            <div class="caffeine-img"><img src="photo/polyphenol_graph.png" alt="" class="caffeine-graph"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="coffee-or-tea">
+            <section class="coffee-or-tea" id="how-about-tea">
                 <div class="text-frame">
                     <div class="coffee-or-tea-title-box">
                         <div class="coffee-or-tea-title">
@@ -106,7 +111,7 @@
                             <h2>3 types of Tea</h2>
                             <div class="type-contents">
                                 <div class="tea-photo">
-                                    <img src="photo/pure_tea.png" alt="">
+                                    <img src="photo/pure_tea.png" alt="" class="tea-img">
                                 </div>
                                 <div class="tea-explanation">
                                     <h3>ピュアティー</h3>
@@ -117,7 +122,7 @@
                             </div>
                             <div class="type-contents">
                                 <div class="tea-photo">
-                                    <img src="photo/brend_tea.png" alt="">
+                                    <img src="photo/brend_tea.png" alt="" class="tea-img">
                                 </div>
                                 <div class="tea-explanation">
                                     <h3>ブレンドティー</h3>
@@ -129,7 +134,7 @@
 
                             <div class="type-contents">
                                 <div class="tea-photo">
-                                    <img src="photo/flavor_tea.png" alt="">
+                                    <img src="photo/flavor_tea.png" alt="" class="tea-img">
                                 </div>
                                 <div class="tea-explanation">
                                     <h3>フレーバーティー</h3>
@@ -143,7 +148,7 @@
                 </div>
             </section>
 
-            <section class="coffee-or-tea">
+            <section class="coffee-or-tea" id="flavor">
                 <div class="text-frame">
                     <div class="coffee-or-tea-title-box">
                         <div class="coffee-or-tea-title">
@@ -155,19 +160,104 @@
                         </div>
                     </div>
                     <div class="flavor-box">
-                        <div class="flavor-photo"><img src="photo/Dimbula.png" alt="" width="190" hight="190"></div>
-                        <div class="flavor-photo" ><img src="photo/%0AKeemun.png" alt="" width="190" hight="190"></div>
-                        <div class="flavor-photo"><img src="photo/%0AAssam.png" alt="" width="190" hight="190"></div>
-                        <div class="flavor-photo"><img src="photo/%0ADarjeeling.png" alt="" width="190" hight="190"></div>
-                        <div class="flavor-photo"><img src="photo/engishbreakfast.png" alt="" width="190" hight="190"></div>
-                        <div class="flavor-photo"><img src="photo/royalbrend.png" alt="" width="190" hight="190"></div>
-                        <div class="flavor-photo"><img src="photo/earlgray.png" alt="" width="190" hight="190"></div>
-                        <div class="flavor-photo"><img src="photo/ladygray.png" alt="" width="190" hight="190"></div>
+                        <div class="flavor-photo">
+                            <div class="dissolve-animation">
+                                <img src="photo/Dimbula.png" alt="" width="190" hight="190" class="flavor-img">
+                                <div class="caption">
+                                    <p>＃ピュアティー
+                                        <br>＃軽い味わい
+                                        <br>＃安定した品質
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flavor-photo">
+                            <div class="dissolve-animation">
+                                <img src="photo/%0AKeemun.png" alt="" width="190" hight="190" class="flavor-img">
+                                <div class="caption">
+                                    <p>
+                                        ＃ピュアティー
+                                        <br>＃スモーキーな香り
+                                        <br>＃三大茶葉の一つ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flavor-photo">
+                            <div class="dissolve-animation">
+                                <img src="photo/%0AAssam.png" alt="" width="190" hight="190" class="flavor-img">
+                                <div class="caption">
+                                    <p>
+                                        ＃ピュアティー
+                                        <br>＃甘い香り
+                                        <br>＃ミルクティーにあう
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flavor-photo">
+                            <div class="dissolve-animation">
+                                <img src="photo/%0ADarjeeling.png" alt="" width="190" hight="190" class="flavor-img">
+                                <div class="caption">
+                                    <p>＃ピュアティー
+                                        <br>＃マスカットの香り
+                                        <br>＃三大茶葉の一つ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flavor-photo">
+                            <div class="dissolve-animation">
+                                <img src="photo/engishbreakfast.png" alt="" width="190" hight="190" class="flavor-img">
+                                <div class="caption">
+                                    <p>
+                                        ＃ブレンドティー
+                                        <br>＃苦味が強い
+                                        <br>＃伝統のブレンド
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flavor-photo">
+                            <div class="dissolve-animation"><img src="photo/royalbrend.png" alt="" width="190" hight="190" class="flavor-img">
+                                <div class="caption">
+                                    <p>
+                                        ＃ブレンドティー
+                                        <br>＃クセがない
+                                        <br>＃伝統のブレンド
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flavor-photo">
+                            <div class="dissolve-animation">
+                                <img src="photo/earlgray.png" alt="" width="190" hight="190" class="flavor-img">
+                                <div class="caption">
+                                    <p>
+                                        ＃フレーバーティー
+                                        <br>＃ベルガモットの香り
+                                        <br>＃ミルクティーに合う
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flavor-photo">
+                            <div class="dissolve-animation">
+                                <img src="photo/ladygray.png" alt="" width="190" hight="190" class="flavor-img">
+                                <div class="caption">
+                                    <p>
+                                        ＃フレーバーティー
+                                        <br>＃レモンの香り
+                                        <br>＃ミルクティーに合う
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="coffee-or-tea">
+            <section class="coffee-or-tea" id="recommended">
                 <div class="text-frame">
                     <div class="coffee-or-tea-title-box">
                         <div class="coffee-or-tea-title">
@@ -182,81 +272,79 @@
                         </div>
                     </div>
                     <div class="recommended">
-                    <div class="recommended-box">
-                        <div class="recommended-photo"><img src="photo/nittou.png" alt="" class="recommended-img"></div>
-                        <div class="recommended-text">
-                            <h3>Daily Club</h3>
-                            <h4>日東紅茶</h4>
-                            <li>価格が安い</li>
-                            <li>スーパーやコンビニなどで販売</li>
-                            <li>クセがない</li>
-                            <li>とりあえず買ってみようの紅茶デビューにおすすめ</li>
+                        <div class="recommended-box">
+                            <div class="recommended-photo"><img src="photo/nittou.png" alt="" class="recommended-img"></div>
+                            <div class="recommended-text">
+                                <h3>Daily Club</h3>
+                                <h4>日東紅茶</h4>
+                                <li>価格が安い</li>
+                                <li>スーパーやコンビニなどで販売</li>
+                                <li>クセがない</li>
+                                <li>とりあえず買ってみようの紅茶デビューにおすすめ</li>
+                            </div>
                         </div>
-                    </div>
-                    <div class="recommended-box">
-                       <div class="recommended-text">
-                            <h3>YELLOW LABEL</h3>
-                            <h4>Lipton</h4>
-                            <li>価格が安い</li>
-                            <li>スーパーやコンビニなどで販売</li>
-                            <li>渋みや苦味がThe紅茶</li>
-                            <li>安いけど本格的な味を楽しみたい時におすすめ</li>
+                        <div class="recommended-box">
+                            <div class="recommended-text">
+                                <h3>YELLOW LABEL</h3>
+                                <h4>Lipton</h4>
+                                <li>価格が安い</li>
+                                <li>スーパーやコンビニなどで販売</li>
+                                <li>渋みや苦味がThe紅茶</li>
+                                <li>安いけど本格的な味を楽しみたい時におすすめ</li>
+                            </div>
+                            <div class="recommended-photo"><img src="photo/lipton.png" alt="" class="recommended-img"></div>
                         </div>
-                        <div class="recommended-photo"><img src="photo/lipton.png" alt="" class="recommended-img"></div>
-                    </div>
-                    <div class="recommended-box">
-                        <div class="recommended-photo" class="recommended-img"><img src="photo/twining.png" alt=""></div>
-                        <div class="recommended-text">
-                            <h3>The BEST 5</h3>
-                            <h4>TWININGS</h4>
-                            <li>価格が安い</li>
-                            <li>スーパーやコンビニなどで販売</li>
-                            <li>５種類に味を楽しめる</li>
-                            <li>いろいろな茶葉を試してみたい時におすすめ</li>
+                        <div class="recommended-box">
+                            <div class="recommended-photo" class="recommended-img"><img src="photo/twining.png" alt=""></div>
+                            <div class="recommended-text">
+                                <h3>The BEST 5</h3>
+                                <h4>TWININGS</h4>
+                                <li>価格が安い</li>
+                                <li>スーパーやコンビニなどで販売</li>
+                                <li>５種類に味を楽しめる</li>
+                                <li>いろいろな茶葉を試してみたい時におすすめ</li>
+                            </div>
                         </div>
-                    </div>
-                    <div class="recommended-box">
-                       <div class="recommended-text">
-                            <h3>The fantasy</h3>
-                            <h4>KALDI</h4>
-                            <li>価格が安い</li>
-                            <li>KALDIやオンラインストアで販売</li>
-                            <li>６種類から選べる</li>
-                            <li>ロイヤルブレンドがおすすめ</li>
+                        <div class="recommended-box">
+                            <div class="recommended-text">
+                                <h3>The fantasy</h3>
+                                <h4>KALDI</h4>
+                                <li>価格が安い</li>
+                                <li>KALDIやオンラインストアで販売</li>
+                                <li>６種類から選べる</li>
+                                <li>ロイヤルブレンドがおすすめ</li>
+                            </div>
+                            <div class="recommended-photo" class="recommended-img"><img src="photo/kaldi.png" alt=""></div>
                         </div>
-                        <div class="recommended-photo" class="recommended-img"><img src="photo/kaldi.png" alt=""></div>
-                    </div>
-                    <div class="recommended-box">
-                        <div class="recommended-photo" class="recommended-img"><img src="photo/gclef.png" alt=""></div>
-                        <div class="recommended-text">
-                            <h3>ダージリン　セカンドフラッシュ</h3>
-                            <h4>Gclef</h4>
-                            <li>価格は高め</li>
-                            <li>専門店やオンラインストアで販売</li>
-                            <li>マスカットの香りをふんだんに楽しめる</li>
-                            <li>季節によって販売していないことがある</li>   
+                        <div class="recommended-box">
+                            <div class="recommended-photo" class="recommended-img"><img src="photo/gclef.png" alt=""></div>
+                            <div class="recommended-text">
+                                <h3>ダージリン　セカンドフラッシュ</h3>
+                                <h4>Gclef</h4>
+                                <li>価格は高め</li>
+                                <li>専門店やオンラインストアで販売</li>
+                                <li>マスカットの香りをふんだんに楽しめる</li>
+                                <li>季節によって販売していないことがある</li>
+                            </div>
                         </div>
-                    </div>
-                    <div class="recommended-box">
-                       <div class="recommended-text">
-                            <h3>Chaina GUI HAO</h3>
-                            <h4>MLESNA Tea HOUSE</h4>
-                            <li>価格は高め</li>
-                            <li>専門店やオンラインストアで販売</li>
-                            <li>ジャスミンの香りのブレンドティー</li>
-                            <li>他にもたくさんの種類がある</li>
+                        <div class="recommended-box">
+                            <div class="recommended-text">
+                                <h3>Chaina GUI HAO</h3>
+                                <h4>MLESNA Tea HOUSE</h4>
+                                <li>価格は高め</li>
+                                <li>専門店やオンラインストアで販売</li>
+                                <li>ジャスミンの香りのブレンドティー</li>
+                                <li>他にもたくさんの種類がある</li>
+                            </div>
+                            <div class="recommended-photo" class="recommended-img"><img src="photo/mlesna.png" alt=""></div>
                         </div>
-                        <div class="recommended-photo" class="recommended-img"><img src="photo/mlesna.png" alt=""></div>
-                    </div>
                     </div>
                 </div>
             </section>
-
-
-
-
-
         </div>
     </body>
+    <footer>
+        <p>© 2020 Shisho.Saegusa</p>
+    </footer>
 
 </body></html>
