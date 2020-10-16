@@ -28,7 +28,7 @@ nav {
     overflow: hidden;
     background-color: rgba(198, 135, 128, 0.4);
     height: 70px;
-    width: 100vw;
+    width: 100%;
     z-index: 3;
     position: fixed;
 }
@@ -100,14 +100,12 @@ header {
 }
 
 .wrapper {
-    width: 75%;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
 .coffee-or-tea {
     background-color: #fff;
-    margin-top: 123px;
-    margin-bottom: 123px;
 }
 
 .text-frame {
@@ -143,6 +141,7 @@ header {
     text-align: center;
     color: #777;
     display: block;
+    padding: 20px;
 }
 
 .coffee-or-tea p {
@@ -161,13 +160,17 @@ header {
 }
 
 .contents {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .about-caffeine {
     background-color: #fff;
-    padding-bottom: 53px;
+    padding-bottom: 10px;
     padding-top: 10px;
 }
 
@@ -175,7 +178,7 @@ header {
     font-family: "logotypejp_corpmin";
     font-size: 30px;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 10px;
     color: #804a39;
 }
@@ -198,6 +201,12 @@ header {
 .caffeine-graph {
     max-width: 100%;
     height: auto;
+}
+
+.one-contents-box{
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .oxidation-box {
@@ -225,25 +234,23 @@ header {
 
 .type-contents {
     display: flex;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-
-
 .tea-img{
-    max-width: 190px;
+    max-width: 150px;
     height: auto;
-    text-align: center;
-     margin: 30px;
+    margin: 10px;
 }
 
 .tea-explanation {
-    margin-top: 40px
+    margin-top: 30px
 }
 
 .tea-explanation h3 {
     padding: 10px 0px 10px 30px;
+    text-align: left;
 }
 
 .tea-explanation p {
@@ -252,10 +259,10 @@ header {
 
 
 .flavor-box {
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 50px 0px 150px 0px;
 }
 
 .dissolve-animation {
@@ -312,7 +319,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 25px 0px;
 }
 
 .recommended-text {
