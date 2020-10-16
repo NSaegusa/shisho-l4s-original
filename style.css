@@ -121,7 +121,6 @@ header {
     align-items: center;
     justify-content: space-around;
     overflow: auto;
-    scroll-snap-type: y;
 }
 
 .coffee-or-tea-title {
