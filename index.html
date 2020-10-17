@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Have a nice Tea</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <title>Have a nice Tea</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="Scrollify-master/jquery.scrollify.js"></script>
 
@@ -45,6 +46,8 @@
             <div class="header-images">
                 <img src="photo/header_text.png" alt="" class="header-text">
                 <img src="photo/header_tea.png" alt="" class="header-tea">
+                <img src="photo/main-text.png" alt="" class="header-text-responsive">
+                <img src="photo/main-photo.png" alt="" class="header-tea-responsive">
             </div>
         </div>
 
@@ -81,18 +84,20 @@
                         </div>
                     </div>
                     <div class="scroll-box">
-                        <div class="contents">
-                            <div class="about-caffeine">
-                                <h2>about Caffeine</h2>
-                                <p>カフェインには、覚醒作用、興奮作用、利尿作用、血管を拡張する作用があります。どの効果にもメリットとデメリットがつきものです。たくさん飲みたい場合は紅茶を選ぶ、少ない量で効果を期待したい場合にはコーヒーを飲むなど飲み分けるといいでしょう。
-                                </p>
-                                <div class="caffeine-img"><img src="photo/caffeine-graph.png" alt="" class="caffeine-graph"></div>
-                            </div>
-                            <div class="about-caffeine">
-                                <h2>about Polyphenol</h2>
-                                <p>コーヒーポリフェノールはガンや動脈硬化を防止する、糖尿病を予防すると言った効果が期待されます。一方、紅茶ポリフェノールは血糖値上昇を抑える、血栓を予防する、コレステロールの排泄を促す効果があります。
-                                </p>
-                                <div class="caffeine-img"><img src="photo/polyphenol_graph.png" alt="" class="caffeine-graph"></div>
+                        <div class="two-contents-box">
+                            <div class="contents">
+                                <div class="about-caffeine">
+                                    <h2>about Caffeine</h2>
+                                    <p>カフェインには、覚醒作用、興奮作用、利尿作用、血管を拡張する作用があります。どの効果にもメリットとデメリットがつきものです。たくさん飲みたい場合は紅茶を選ぶ、少ない量で効果を期待したい場合にはコーヒーを飲むなど飲み分けるといいでしょう。
+                                    </p>
+                                    <div class="caffeine-img"><img src="photo/caffeine-graph.png" alt="" class="caffeine-graph"></div>
+                                </div>
+                                <div class="about-caffeine">
+                                    <h2>about Polyphenol</h2>
+                                    <p>コーヒーポリフェノールはガンや動脈硬化を防止する、糖尿病を予防すると言った効果が期待されます。一方、紅茶ポリフェノールは血糖値上昇を抑える、血栓を予防する、コレステロールの排泄を促す効果があります。
+                                    </p>
+                                    <div class="caffeine-img"><img src="photo/polyphenol_graph.png" alt="" class="caffeine-graph"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -126,6 +131,9 @@
                                     <img src="photo/oxidation_image.png" alt="" class="oxidation-img">
                                 </div>
 
+                                <div class="oxidation-box-responsive">
+                                    <img src="photo/oxidation-responsive-img.png" alt="" class="oxidation-responsive-photo">
+                                </div>
                                 <p>お茶は様々な種類や名前がありますが、元は全て一つの「茶」という植物からできています。茶の葉は発酵させ具合によって抽出した際の色が変わってきます。紅茶は、茶葉に含まれるタンニンという成分が酸化完全に発酵させることで出来上がります。
                                 </p>
                             </div>
@@ -133,40 +141,42 @@
                     </div>
 
                     <div class="scroll-box">
-                        <div class="about-caffeine">
-                            <h2>3 types of Tea</h2>
-                            <div class="type-contents">
-                                <div class="tea-photo">
-                                    <img src="photo/pure_tea.png" alt="" class="tea-img" width="150">
+                        <div class="two-contents-box">
+                            <div class="about-caffeine">
+                                <h2>3 types of Tea</h2>
+                                <div class="type-contents">
+                                    <div class="tea-photo">
+                                        <img src="photo/pure_tea.png" alt="" class="tea-img" width="150">
+                                    </div>
+                                    <div class="tea-explanation">
+                                        <h3>ピュアティー</h3>
+                                        <p>
+                                            茶葉は、産地によって特徴が全く異なります。産地の異なる茶葉を混ぜていない、純粋にその産地の茶葉のみを使っている紅茶をピュアティーと呼びます。また、茶葉は収穫時期によっても味や風味が変化します。
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="tea-explanation">
-                                    <h3>ピュアティー</h3>
-                                    <p>
-                                        茶葉は、産地によって特徴が全く異なります。産地の異なる茶葉を混ぜていない、純粋にその産地の茶葉のみを使っている紅茶をピュアティーと呼びます。また、茶葉は収穫時期によっても味や風味が変化します。
-                                    </p>
+                                <div class="type-contents">
+                                    <div class="tea-photo">
+                                        <img src="photo/brend_tea.png" alt="" class="tea-img" width="150">
+                                    </div>
+                                    <div class="tea-explanation">
+                                        <h3>ブレンドティー</h3>
+                                        <p>
+                                            様々な産地の茶葉や、収穫時期の異なる茶葉を混ぜ合わせることで自分好みの味の紅茶を作ることができます。同じ商品名であってもメーカーによって配合が異なるため味が変化します。
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="type-contents">
-                                <div class="tea-photo">
-                                    <img src="photo/brend_tea.png" alt="" class="tea-img" width="150">
-                                </div>
-                                <div class="tea-explanation">
-                                    <h3>ブレンドティー</h3>
-                                    <p>
-                                        様々な産地の茶葉や、収穫時期の異なる茶葉を混ぜ合わせることで自分好みの味の紅茶を作ることができます。同じ商品名であってもメーカーによって配合が異なるため味が変化します。
-                                    </p>
-                                </div>
-                            </div>
 
-                            <div class="type-contents">
-                                <div class="tea-photo">
-                                    <img src="photo/flavor_tea.png" alt="" class="tea-img" width="150">
-                                </div>
-                                <div class="tea-explanation">
-                                    <h3>フレーバーティー</h3>
-                                    <p>
-                                        ピュアティーやブレンドティーにフルーツやハーブなどを混ぜたもののことを指します。
-                                    </p>
+                                <div class="type-contents">
+                                    <div class="tea-photo">
+                                        <img src="photo/flavor_tea.png" alt="" class="tea-img" width="150">
+                                    </div>
+                                    <div class="tea-explanation">
+                                        <h3>フレーバーティー</h3>
+                                        <p>
+                                            ピュアティーやブレンドティーにフルーツやハーブなどを混ぜたもののことを指します。
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -305,75 +315,103 @@
                     </div>
                     <div class="recommended">
                         <div class="scroll-box">
-                            <div class="recommended-box">
-                                <div class="recommended-photo"><img src="photo/nittou.png" alt="" class="recommended-img"></div>
-                                <div class="recommended-text">
-                                    <h3>Daily Club</h3>
-                                    <h4>日東紅茶</h4>
-                                    <li>価格が安い</li>
-                                    <li>スーパーやコンビニなどで販売</li>
-                                    <li>クセがない</li>
-                                    <li>とりあえず買ってみようの紅茶デビューにおすすめ</li>
+                            <div class="recommended-containar">
+                                <div class="recommended-containar-box">
+                                    <div class="recommended-box">
+                                        <div class="recommended-photo"><img src="photo/nittou.png" alt="" class="recommended-img"></div>
+                                        <div class="recommended-text">
+                                            <h3>Daily Club</h3>
+                                            <h4>日東紅茶</h4>
+                                            <div class="li-box">
+                                                <li>価格が安い</li>
+                                                <li>スーパーやコンビニなどで販売</li>
+                                                <li>クセがない</li>
+                                                <li>とりあえず買ってみようの紅茶デビューにおすすめ</li>
+                                            </div>
+                                            <a href="https://www.amazon.co.jp/%E6%97%A5%E6%9D%B1%E7%B4%85%E8%8C%B6-%E3%83%87%E3%82%A4%E3%83%AA%E3%83%BC%E3%82%AF%E3%83%A9%E3%83%96-%E3%83%86%E3%82%A3%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0-2-2g%C3%9725%E8%A2%8B%E5%85%A5%E3%82%8A-%C3%976%E5%80%8B/dp/B002WSLXCM/ref=sr_1_33_sspa?dchild=1&keywords=%E6%97%A5%E6%9D%B1%E7%B4%85%E8%8C%B6&qid=1602913509&sr=8-33-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyVzdPSlA3RElFOE80JmVuY3J5cHRlZElkPUEwOTQ3MjMwMlZDQjlDSk41SlBYUSZlbmNyeXB0ZWRBZElkPUEzS0Y5TDRNMlNNTEVYJndpZGdldE5hbWU9c3BfbXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">オンラインショップ</a>
+                                        </div>
+                                    </div>
+                                    <div class="recommended-box">
+                                        <div class="recommended-text">
+                                            <h3>YELLOW LABEL</h3>
+                                            <h4>Lipton</h4>
+                                            <div class="li-box">
+                                                <li>価格が安い</li>
+                                                <li>スーパーやコンビニなどで販売</li>
+                                                <li>渋みや苦味がThe紅茶</li>
+                                                <li>安いけど本格的な味を楽しみたい時におすすめ</li>
+                                            </div>
+                                            <a href="https://item.rakuten.co.jp/lipton/67598665/">オンラインショップ</a>
+                                        </div>
+                                        <div class="recommended-photo"><img src="photo/lipton.png" alt="" class="recommended-img"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="recommended-box">
-                                <div class="recommended-text">
-                                    <h3>YELLOW LABEL</h3>
-                                    <h4>Lipton</h4>
-                                    <li>価格が安い</li>
-                                    <li>スーパーやコンビニなどで販売</li>
-                                    <li>渋みや苦味がThe紅茶</li>
-                                    <li>安いけど本格的な味を楽しみたい時におすすめ</li>
-                                </div>
-                                <div class="recommended-photo"><img src="photo/lipton.png" alt="" class="recommended-img"></div>
                             </div>
                         </div>
                         <div class="scroll-box">
-                            <div class="recommended-box">
-                                <div class="recommended-photo"><img src="photo/twining.png" alt="" class="recommended-img"></div>
-                                <div class="recommended-text">
-                                    <h3>The BEST 5</h3>
-                                    <h4>TWININGS</h4>
-                                    <li>価格が安い</li>
-                                    <li>スーパーやコンビニなどで販売</li>
-                                    <li>５種類に味を楽しめる</li>
-                                    <li>いろいろな茶葉を試してみたい時におすすめ</li>
+                            <div class="recommended-containar">
+                                <div class="recommended-containar-box">
+                                    <div class="recommended-box">
+                                        <div class="recommended-photo"><img src="photo/twining.png" alt="" class="recommended-img"></div>
+                                        <div class="recommended-text">
+                                            <h3>The BEST 5</h3>
+                                            <h4>TWININGS</h4>
+                                            <div class="li-box">
+                                                <li>価格が安い</li>
+                                                <li>スーパーやコンビニなどで販売</li>
+                                                <li>５種類に味を楽しめる</li>
+                                                <li>いろいろな茶葉を試してみたい時におすすめ</li>
+                                            </div>
+                                            <a href="https://www.amazon.co.jp/%E3%83%88%E3%83%AF%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0-%E3%83%86%E3%82%A3%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0%E3%82%B6%E3%83%BB%E3%83%99%E3%82%B9%E3%83%88%E3%83%95%E3%82%A1%E3%82%A4%E3%83%96-20P%C3%974%E5%80%8B/dp/B002WSIACI?ref_=ast_sto_dp">オンラインショップ</a>
+                                        </div>
+                                    </div>
+                                    <div class="recommended-box">
+                                        <div class="recommended-text">
+                                            <h3>The fantasy</h3>
+                                            <h4>KALDI</h4>
+                                            <div class="li-box">
+                                                <li>価格が安い</li>
+                                                <li>KALDIやオンラインストアで販売</li>
+                                                <li>６種類から選べる</li>
+                                                <li>ロイヤルブレンドがおすすめ</li>
+                                            </div>
+                                            <a href="https://www.kaldi.co.jp/ec/pro/disp/1/4515996090820?sFlg=2">オンラインショップ</a>
+                                        </div>
+                                        <div class="recommended-photo"><img src="photo/kaldi.png" alt="" class="recommended-img"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="recommended-box">
-                                <div class="recommended-text">
-                                    <h3>The fantasy</h3>
-                                    <h4>KALDI</h4>
-                                    <li>価格が安い</li>
-                                    <li>KALDIやオンラインストアで販売</li>
-                                    <li>６種類から選べる</li>
-                                    <li>ロイヤルブレンドがおすすめ</li>
-                                </div>
-                                <div class="recommended-photo"><img src="photo/kaldi.png" alt="" class="recommended-img"></div>
                             </div>
                         </div>
                         <div class="scroll-box">
-                            <div class="recommended-box">
-                                <div class="recommended-photo"><img src="photo/gclef.png" alt="" class="recommended-img"></div>
-                                <div class="recommended-text">
-                                    <h3>ダージリン　セカンドフラッシュ</h3>
-                                    <h4>Gclef</h4>
-                                    <li>価格は高め</li>
-                                    <li>専門店やオンラインストアで販売</li>
-                                    <li>マスカットの香りをふんだんに楽しめる</li>
-                                    <li>季節によって販売していないことがある</li>
+                            <div class="recommended-containar">
+                                <div class="recommended-box">
+                                    <div class="recommended-photo"><img src="photo/gclef.png" alt="" class="recommended-img"></div>
+                                    <div class="recommended-text">
+                                        <h3>ダージリン　セカンドフラッシュ</h3>
+                                        <h4>Gclef</h4>
+                                        <div class="li-box">
+                                            <li>価格は高め</li>
+                                            <li>専門店やオンラインストアで販売</li>
+                                            <li>マスカットの香りをふんだんに楽しめる</li>
+                                            <li>季節によって販売していないことがある</li>
+                                        </div>
+                                        <a href="https://www.gclef.co.jp/products_all?utf8=%E2%9C%93&q%5Bname_or_summary_or_description_or_packages_name_or_product_category_name_or_tags_name_cont%5D=%E3%83%80%E3%83%BC%E3%82%B8%E3%83%AA%E3%83%B3&commit=%E6%A4%9C%E7%B4%A2%E3%81%99%E3%82%8B">オンラインショップ</a>
+                                    </div>
+                                    <div class="recommended-box">
+                                        <div class="recommended-text">
+                                            <h3>China GUI HAO</h3>
+                                            <h4>MLESNA Tea HOUSE</h4>
+                                            <div class="li-box">
+                                                <li>価格は高め</li>
+                                                <li>専門店やオンラインストアで販売</li>
+                                                <li>ジャスミンの香りのブレンドティー</li>
+                                                <li>他にもたくさんの種類がある</li>
+                                            </div>
+                                            <a href="https://uct-mlesna.com/product/cat01/post-2520">公式サイト</a>
+                                        </div>
+                                        <div class="recommended-photo"><img src="photo/mlesna.png" alt="" class="recommended-img"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="recommended-box">
-                                <div class="recommended-text">
-                                    <h3>China GUI HAO</h3>
-                                    <h4>MLESNA Tea HOUSE</h4>
-                                    <li>価格は高め</li>
-                                    <li>専門店やオンラインストアで販売</li>
-                                    <li>ジャスミンの香りのブレンドティー</li>
-                                    <li>他にもたくさんの種類がある</li>
-                                </div>
-                                <div class="recommended-photo"><img src="photo/mlesna.png" alt="" class="recommended-img"></div>
                             </div>
                         </div>
                     </div>
