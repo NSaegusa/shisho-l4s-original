@@ -21,7 +21,7 @@
 body {
     width: 100%;
     background: url(photo/background.jpg) center center;
-    background-size: 100% auto;
+    background-repeat: repeat;
 }
 
 nav {
@@ -106,6 +106,7 @@ header {
 
 .coffee-or-tea {
     background-color: #fff;
+    margin: 80px 0px;
 }
 
 .text-frame {
@@ -115,7 +116,8 @@ header {
 
 .coffee-or-tea-title-box {
     display: flex;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
+    height: 768px;
     align-items: center;
     justify-content: space-around;
     overflow: auto;
@@ -157,10 +159,11 @@ header {
 
 .yazirusi-img {
     text-align: center;
+    padding: 20px;
 }
 
 .two-contents-box {
-    height: 100vh;
+    height: 768px;
     display: flex;
     align-items: center;
 }
@@ -173,6 +176,7 @@ header {
 .about-caffeine {
     padding-bottom: 10px;
     padding-top: 10px;
+    margin: 20px;
 }
 
 .about-caffeine h2 {
@@ -182,6 +186,7 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     color: #804a39;
+    margin-top: 50px;
 }
 
 .about-caffeine p {
@@ -195,8 +200,19 @@ header {
 
 .caffeine-img {
     text-align: center;
-    padding: 20px;
+    padding: 　20px;
     max-width: 100%;
+}
+
+.caffeine-img p{
+    font-family: "ipaexm";
+    font-size: 15px;
+    color: #777;
+    text-align: center;
+    width: 30%;
+    padding: 5px;
+    display: inline-block;
+    line-height: 20px;
 }
 
 .caffeine-graph {
@@ -205,7 +221,7 @@ header {
 }
 
 .one-contents-box {
-    height: 100vh;
+    height: 768px; 
     display: flex;
     align-items: center;
 }
@@ -260,11 +276,20 @@ header {
 
 
 .flavor-box {
-    height: 100vh;
+    min-height: 768px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
 
+}
+
+.flavor-photo p{
+    font-family: "ipaexm";
+    font-size: 15px;
+    color: #777;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .dissolve-animation {
@@ -326,19 +351,21 @@ header {
     height: 100vh;
 }*/
 
-.recommended-containar {
+/*.recommended-containar {
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
-}
+}*/
 
 .recommended-box {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 60px;
 }
 
 .recommended-text {
-    max-width: 40%;
+    max-width: 60%;
     height: auto;
     display: inline-block;
     vertical-align: middle;
@@ -347,13 +374,12 @@ header {
 .recommended-photo {
     max-width: 40%;
     height: auto;
-    margin: 0 auto;
     display: inline-block;
     vertical-align: middle;
 }
 
 .recommended-img {
-    text-align: center;
+    text-align: flex-start;
     width: 100%;
 }
 
@@ -420,7 +446,18 @@ footer p {
     padding: 10px;
     text-decoration: none;
     color: white;
-    margin: 40px 20px;
+    margin: 40px 0px;
+}
+
+.recommended-box a:hover{
+    border-radius: 10px;
+    background-color: #fff;
+    border-color: #c68780;
+    padding: 10px;
+    text-decoration: none;
+    color: #c68780;
+    margin: 40px 0px;
+    border-style: solid;
 }
 
 .li-box {
