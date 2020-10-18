@@ -162,6 +162,16 @@ header {
     padding: 20px;
 }
 
+.img-yazirusi:hover {
+    opacity: 0.7;
+}
+
+.img-yazirusi:active {
+    position: relative;
+    top: 3px;
+
+}
+
 .two-contents-box {
     height: 768px;
     display: flex;
@@ -300,36 +310,46 @@ header {
     position: relative;
 }
 
+.caption-text-box {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+}
+
 .caption p {
+    max-width: 180px;
     font-family: "ipaexm";
-    font-size: 16px;
+    font-size: 15px;
     color: #000;
     text-align: left;
-    padding: 45px 20px;
+    padding: 0;
     line-height: 30px;
-    opacity: 0;
+    opacity: 1;
+    display: block;
+    margin: 0 auto;
+    background-color: aliceblue;
+    overflow: hidden;
 }
 
 .caption {
     background: #fff;
     width: 190px;
     height: 190px;
-    padding: 10px 20px;
+    padding: 20px;
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .caption p:hover {
-    font-family: "ipaexm";
-    font-size: 15px;
-    color: #000;
-    text-align: left;
-    padding: 45px 20px;
-    line-height: 30px;
+
     opacity: 1;
+
 }
 
 .caption:hover {
@@ -370,15 +390,39 @@ header {
     padding: 60px;
 }
 
-.recommended-text {
-    max-width: 60%;
+.recommended-box-right .recommended-text {
+    width: 60%;
     height: auto;
     display: inline-block;
     vertical-align: middle;
+    margin-right: 0%;
+}
+
+/*.recommended-box-left .recommended-text {
+    width: 60%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0%;
+    float:right;
+}*/
+
+.recommended-box-left .box {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.recommended-box-left .box .recommended-text {
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0%;
+    float: right;
 }
 
 .recommended-photo {
-    max-width: 40%;
+    width: 40%;
     height: auto;
     display: inline-block;
     vertical-align: middle;
@@ -447,44 +491,44 @@ footer p {
 
 .recommended-box-left a {
     border-radius: 10px;
-    background-color: #c68780;
+    background-color: rgba(198, 135, 128, 1);
     border-color: #c68780;
     padding: 10px;
     text-decoration: none;
     color: white;
     margin: 40px 0px;
+    transition: 0.5s;
 }
 
 .recommended-box-right a {
     border-radius: 10px;
     background-color: #c68780;
-    border-color: #c68780;
+    background-color: rgba(198, 135, 128, 1);
     padding: 10px;
     text-decoration: none;
     color: white;
     margin: 40px 0px;
+    transition: 0.5s;
 }
 
 .recommended-box-left a:hover {
     border-radius: 10px;
-    background-color: #fff;
+    background-color: rgba(198, 135, 128, 0.4);
     border-color: #c68780;
     padding: 10px;
     text-decoration: none;
     color: #c68780;
     margin: 40px 0px;
-    border-style: solid;
 }
 
 .recommended-box-right a:hover {
     border-radius: 10px;
-    background-color: #fff;
+    background-color: rgba(198, 135, 128, 0.4);
     border-color: #c68780;
     padding: 10px;
     text-decoration: none;
     color: #c68780;
     margin: 40px 0px;
-    border-style: solid;
 }
 
 .li-box {
@@ -561,12 +605,15 @@ footer p {
 
     .coffee-or-tea {
         background-color: #fff;
-        margin: 0 25px;
+        margin: 80px 10px;
+        overflow: scroll;
     }
+
 
     .text-frame {
         width: 90%;
         margin: 0 auto;
+        align-items:
     }
 
     .coffee-or-tea-title-box {
@@ -619,10 +666,17 @@ footer p {
         height: auto;
     }
 
+    .img-yazirusi:active {
+        position: relative;
+        top: 3px;
+
+    }
+
     .about-caffeine {
         padding-bottom: 30px;
         padding-top: 30px;
-        margin: 0 auto;
+        margin: 10px;
+        max-height: 2000px;
     }
 
     .about-caffeine h2 {
@@ -812,6 +866,11 @@ footer p {
         padding: 10px;
     }
 
+    .recommended-box-left .box {
+        width: 100%;
+        display: block;
+    }
+
     .recommended-text {
         min-width: 100%;
         height: auto;
@@ -856,5 +915,5 @@ footer p {
         padding-bottom: 50px;
     }
 
-    
+
 }
