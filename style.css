@@ -628,7 +628,7 @@ footer p {
 
     .coffee-or-tea h1 {
         font-family: "logotypejp_corpmin";
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
         padding: 20px;
         color: #c68780;
@@ -779,12 +779,12 @@ footer p {
         height: auto;
         display: block;
     }
-    
+
     .tw-contents-box {
         height: auto;
         display: block;
     }
-    
+
 
     .dissolve-animation {
         padding: 20px 20px;
@@ -807,6 +807,7 @@ footer p {
         padding: 30px 0px;
         line-height: 20px;
         opacity: 1;
+        display: block;
     }
 
     .caption {
@@ -816,10 +817,10 @@ footer p {
         position: absolute;
         top: 0%;
         left: 100%;
-       opacity: 1;
+        opacity: 1;
         background: none;
     }
-    
+
 
 
     .caption p:hover {
@@ -921,4 +922,41 @@ footer p {
     }
 
 
+}
+
+@media screen and (max-width:350px) {
+
+    .flavor-photo {
+        width: 100%;
+        height: 300px;
+    }
+
+    .caption {
+        width: 150px;
+        height: auto;
+        padding: 0px;
+        position: absolute;
+        top: 110%;
+        left:0%;
+        opacity: 1;
+        background: none;
+    }
+
+    .dissolve-animation {
+        display: flex;
+        justify-content: center;
+        float: none;
+    }
+    
+    .caption p {
+        font-family: "ipaexm";
+        font-size: 15px;
+        color: #777;
+        text-align: left;
+        padding: 30px 0px;
+        line-height: 20px;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+    }
 }
